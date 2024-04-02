@@ -1,12 +1,19 @@
 {% extends "base.html" %}
 
 {% block head %}
-
+<title>Login Page</title>
 {% endblock %}
 
 
 {% block body %}
 
-<h1> Template </h1>
-
+<div class="content">
+    <h1>Sign up</h1>
+    <form action="/" method="Post">
+        <p>User Name <input type = "text" name = "User Name" /></p>
+        <p>Password <input type = "text" name = "Password" /></p>
+        <p><input type = "submit" value = "submit" /></p>
+    </form>
+</div>
+<!-- TODO: Have user be able to enter their username and password and store that data into database and then have user be able to login -->
 {% endblock %}
